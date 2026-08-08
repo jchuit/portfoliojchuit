@@ -95,6 +95,8 @@ p { color: var(--muted); }
 .button:hover { transform: translateY(-2px); }
 .button.primary { color: #07111f; background: linear-gradient(135deg, var(--accent), var(--accent-strong)); }
 .button.secondary { color: var(--text); border-color: var(--line); background: rgba(255,255,255,.035); }
+.button.ghost { color: var(--text); border-color: rgba(255,255,255,.2); background: transparent; }
+.button.ghost:hover { border-color: rgba(255,255,255,.4); }
 .hero-tags { display: flex; flex-wrap: wrap; gap: .55rem; padding: 0; margin: 0; list-style: none; }
 .hero-tags li { color: #cdd7e6; font-size: .86rem; padding: .45rem .7rem; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.025); }
 .hero-panel { border: 1px solid var(--line); border-radius: 26px; background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025)); box-shadow: var(--shadow); padding: 1.4rem; }
@@ -216,4 +218,16 @@ p { color: var(--muted); }
   .archive-card { align-items: flex-start; flex-direction: column; }
   .contact-grid { padding: 1.3rem; gap: 2rem; }
   .footer-wrap { flex-direction: column; }
+}
+
+/* Hero: readable on wide screens without shrinking the mobile hierarchy. */
+.hero-copy h1 {
+  max-width: 20ch;
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+.hero-lead {
+  max-width: 52ch;
+  font-size: clamp(1rem, 1.1vw, 1.125rem);
 }
