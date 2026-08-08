@@ -29,3 +29,7 @@ La carpeta `Practicas/` conserva ejercicios de análisis de datos, Excel, SQL y 
 - LinkedIn: https://www.linkedin.com/in/juan-manuel-chuit-berzoni/
 - GitHub: https://github.com/jchuit
 - Email: mjuan260@gmail.com
+
+## Privacidad
+
+El CV completo no se publica en el repositorio ni en el sitio para evitar exponer datos personales, como el teléfono. Para postulaciones se comparte por los canales de contacto indicados arriba.

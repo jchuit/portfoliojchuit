@@ -1,6 +1,21 @@
 # Publicar esta versión en GitHub Pages
 
-## Opción simple desde Git
+## Estructura que debe quedar publicada
+
+En la raíz de la rama `main` deben quedar únicamente estos elementos:
+
+```
+assets/
+Practicas/
+DEPLOY.md
+README.md
+favicon.svg
+index.html
+```
+
+No se deben conservar los CV viejos, los archivos sueltos de ejercicios académicos ni la carpeta `images/` del template anterior.
+
+## Opción recomendada: Git desde un clon local
 
 Desde la carpeta del repositorio:
 
@@ -15,10 +30,10 @@ Si GitHub Pages ya está configurado para publicar desde la rama `main` y la car
 ## Si reemplazás el repositorio manualmente
 
 1. Hacé una copia de seguridad del repo actual.
-2. Reemplazá los archivos de la rama `main` por los contenidos de esta carpeta.
+2. Reemplazá los archivos de la rama `main` por los contenidos de esta carpeta, respetando las subcarpetas `assets/` y `Practicas/`.
 3. Conservá la carpeta `.git` de tu clon local si trabajás con Git.
 4. Subí los cambios.
 
 ## Privacidad
 
-El archivo `CV_Juan_Manuel_Chuit_Berzoni.pdf` queda accesible públicamente desde el portfolio. Si preferís no publicar un CV con teléfono u otros datos personales, eliminá ese PDF y reemplazá el botón "Ver CV" de `index.html` por un enlace a LinkedIn o email.
+Esta versión no publica el CV completo. El botón principal dirige a LinkedIn y el sitio mantiene el email como canal de contacto.
