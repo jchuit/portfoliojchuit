@@ -1,8 +1,8 @@
-# Juan Manuel Chuit Berzoni — Portfolio profesional
+# Juan Manuel Chuit Berzoni — Analista Funcional Sr. | IT Business Analyst
 
-Portfolio personal orientado a mi perfil actual como **Analista Funcional Sr. / IT Business Analyst**, con foco en procesos, integraciones, productos digitales y mejora continua.
+Analista Funcional Sr. orientado a procesos, integraciones, aplicaciones críticas y productos digitales. Conecto necesidades de negocio con equipos técnicos para llevar requerimientos a soluciones implementables.
 
-🌐 **Sitio:** https://jchuit.github.io/portfoliojchuit/
+[Ver portfolio online](https://jchuit.github.io/portfoliojchuit/) · [Ver LinkedIn](https://www.linkedin.com/in/juan-manuel-chuit-berzoni/)
 
 ## Perfil
 
@@ -20,15 +20,15 @@ Portfolio personal orientado a mi perfil actual como **Analista Funcional Sr. / 
 
 Metodologías y marcos: `Scrum` `Kanban` `ITIL` `BCRA` `PCI-DSS` `ISO 27001`.
 
-## Archivo académico
+## Proyectos académicos e históricos
 
 La carpeta `Practicas/` conserva ejercicios de análisis de datos, Excel, SQL y visualización realizados durante etapas anteriores de formación. Se mantienen como archivo histórico y no representan el foco actual del portfolio.
 
 ## Contacto
 
-- LinkedIn: https://www.linkedin.com/in/juan-manuel-chuit-berzoni/
-- GitHub: https://github.com/jchuit
-- Email: mjuan260@gmail.com
+- [Portfolio online](https://jchuit.github.io/portfoliojchuit/)
+- [LinkedIn](https://www.linkedin.com/in/juan-manuel-chuit-berzoni/)
+- [GitHub](https://github.com/jchuit)
 
 ## Privacidad
 
