@@ -4,6 +4,7 @@
   const nav = document.querySelector('.site-nav');
   const links = nav ? nav.querySelectorAll('a') : [];
   const year = document.getElementById('year');
+  const backToTop = document.querySelector('.back-to-top');
 
   if (year) year.textContent = new Date().getFullYear();
 
@@ -12,6 +13,15 @@
   };
   updateHeader();
   window.addEventListener('scroll', updateHeader, { passive: true });
+
+  const updateBackToTop = () => {
+    if (backToTop) backToTop.classList.toggle('visible', window.scrollY > 620);
+  };
+  updateBackToTop();
+  window.addEventListener('scroll', updateBackToTop, { passive: true });
+  if (backToTop) {
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  }
 
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
