@@ -5,6 +5,9 @@
   const links = nav ? nav.querySelectorAll('a') : [];
   const year = document.getElementById('year');
   const backToTop = document.querySelector('.back-to-top');
+  const emailReveal = document.querySelector('.contact-email-reveal');
+  const emailActions = document.querySelectorAll('.email-action');
+  const portfolioEmail = () => atob('bWp1YW4yNjBAZ21haWwuY29t');
 
   if (year) year.textContent = new Date().getFullYear();
 
@@ -22,6 +25,28 @@
   if (backToTop) {
     backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
+
+  const mailto = (subject = '', body = '') => {
+    const params = new URLSearchParams();
+    if (subject) params.set('subject', subject);
+    if (body) params.set('body', body);
+    const query = params.toString();
+    window.location.href = `mailto:${portfolioEmail()}${query ? `?${query}` : ''}`;
+  };
+
+  if (emailReveal) {
+    emailReveal.addEventListener('click', () => {
+      const link = document.createElement('a');
+      link.href = `mailto:${portfolioEmail()}`;
+      link.innerHTML = '<span>Email</span><strong></strong>';
+      link.querySelector('strong').textContent = portfolioEmail();
+      emailReveal.replaceWith(link);
+    }, { once: true });
+  }
+
+  emailActions.forEach(action => action.addEventListener('click', () => {
+    mailto(action.dataset.subject, action.dataset.body);
+  }));
 
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
