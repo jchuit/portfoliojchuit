@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jchuit.github.io/portfoliojchuit/sitemap.xml
+Sitemap: https://juanchuit.com.ar/sitemap.xml

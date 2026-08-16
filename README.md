@@ -2,7 +2,7 @@
 
 Analista Funcional Sr. orientado a procesos, integraciones, aplicaciones críticas y productos digitales. Conecto necesidades de negocio con equipos técnicos para llevar requerimientos a soluciones implementables.
 
-[Ver portfolio online](https://jchuit.github.io/portfoliojchuit/) · [Ver LinkedIn](https://www.linkedin.com/in/juan-manuel-chuit-berzoni/)
+[Ver portfolio online](https://juanchuit.com.ar/) · [Ver LinkedIn](https://www.linkedin.com/in/juan-manuel-chuit-berzoni/)
 
 ## Perfil
 
@@ -26,7 +26,7 @@ La carpeta `Practicas/` conserva ejercicios de análisis de datos, Excel, SQL y 
 
 ## Contacto
 
-- [Portfolio online](https://jchuit.github.io/portfoliojchuit/)
+- [Portfolio online](https://juanchuit.com.ar/)
 - [LinkedIn](https://www.linkedin.com/in/juan-manuel-chuit-berzoni/)
 - [GitHub](https://github.com/jchuit)
 
