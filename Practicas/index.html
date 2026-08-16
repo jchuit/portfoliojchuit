@@ -3,25 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Archivo académico de Juan Manuel Chuit Berzoni: ejercicios históricos de análisis de datos, estadística, modelado y visualización." />
+  <meta name="theme-color" content="#08101f" />
   <title>Archivo académico | Juan Manuel Chuit Berzoni</title>
   <style>
-    :root{color-scheme:dark;--bg:#08101f;--surface:#111d31;--text:#f4f7fb;--muted:#a7b4c8;--line:rgba(255,255,255,.12);--accent:#6dd7d0}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}.wrap{width:min(calc(100% - 32px),900px);margin:0 auto;padding:72px 0}a{color:var(--accent)}h1{font-size:clamp(2rem,6vw,4rem);line-height:1.05;margin:.5rem 0 1rem}p{color:var(--muted)}.back{text-decoration:none;font-weight:800}.list{display:grid;gap:.7rem;margin-top:2rem}.item{display:flex;justify-content:space-between;gap:1rem;padding:1rem;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;color:var(--text)}.item span:last-child{color:var(--muted)}
+    :root { color-scheme: dark; --bg: #08101f; --surface: #111d31; --text: #f4f7fb; --muted: #a7b4c8; --line: rgba(255, 255, 255, .13); --accent: #6dd7d0; --accent-soft: rgba(109, 215, 208, .12); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: radial-gradient(circle at 82% 10%, rgba(109, 215, 208, .09), transparent 28rem), var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
+    a { color: inherit; }
+    .wrap { width: min(calc(100% - 40px), 1120px); margin: 0 auto; padding: 28px 0 72px; }
+    .back { display: inline-flex; align-items: center; gap: .55rem; color: var(--text); text-decoration: none; font-size: .95rem; font-weight: 750; }
+    .back:hover { color: var(--accent); }
+    .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 360px); gap: 3rem; align-items: end; padding: 92px 0 68px; }
+    .eyebrow { margin: 0 0 1rem; color: var(--accent); font-size: .76rem; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
+    h1 { max-width: 13ch; margin: 0; font-size: clamp(2.65rem, 5.8vw, 5.25rem); line-height: .98; letter-spacing: -.045em; }
+    .notice { border: 1px solid var(--line); border-radius: 18px; padding: 1.35rem; background: rgba(17, 29, 49, .75); }
+    .notice strong { display: block; margin-bottom: .45rem; font-size: .95rem; }
+    .notice p { margin: 0; color: var(--muted); font-size: .92rem; }
+    .section-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: end; margin-bottom: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+    h2 { margin: 0; font-size: clamp(1.45rem, 2vw, 1.9rem); letter-spacing: -.025em; }
+    .section-heading p { max-width: 42ch; margin: 0; color: var(--muted); font-size: .94rem; text-align: right; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .card { display: flex; min-height: 306px; flex-direction: column; border: 1px solid var(--line); border-radius: 20px; padding: clamp(1.25rem, 2.4vw, 1.8rem); background: linear-gradient(145deg, rgba(17, 29, 49, .95), rgba(13, 23, 40, .86)); }
+    .number { display: inline-grid; width: 2.35rem; height: 2.35rem; place-items: center; margin-bottom: 1.45rem; border-radius: .65rem; background: var(--accent); color: #08202a; font-size: .78rem; font-weight: 900; }
+    .card h3 { max-width: 24ch; margin: 0 0 .65rem; font-size: clamp(1.2rem, 2vw, 1.5rem); line-height: 1.15; letter-spacing: -.025em; }
+    .card > p { margin: 0; color: var(--muted); font-size: .96rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.35rem 0 auto; }
+    .chips span { border: 1px solid var(--line); border-radius: 999px; padding: .28rem .62rem; background: var(--accent-soft); color: #d8f7f4; font-size: .78rem; line-height: 1.35; }
+    .actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.5rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; border: 1px solid var(--line); border-radius: 10px; padding: .58rem .85rem; color: var(--text); font-size: .88rem; font-weight: 750; text-decoration: none; }
+    .button:hover { border-color: var(--accent); color: var(--accent); }
+    .button.primary { border-color: var(--accent); background: var(--accent); color: #08202a; }
+    .button.primary:hover { background: #92e7e2; color: #08202a; }
+    .footnote { margin: 2.4rem 0 0; border-top: 1px solid var(--line); padding-top: 1.25rem; color: var(--muted); font-size: .88rem; }
+    @media (max-width: 760px) { .wrap { width: min(calc(100% - 32px), 1120px); padding-top: 22px; } .hero { grid-template-columns: 1fr; gap: 2rem; padding: 68px 0 50px; } h1 { max-width: 12ch; } .section-heading { display: block; } .section-heading p { margin-top: .5rem; text-align: left; } .grid { grid-template-columns: 1fr; } .card { min-height: 0; } }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <a class="back" href="../">← Volver al portfolio</a>
-    <p style="margin-top:3rem;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem">Archivo académico</p>
-    <h1>Prácticas históricas de datos y visualización.</h1>
-    <p>Material realizado durante etapas anteriores de formación. Se conserva como evidencia de aprendizaje, pero no representa el foco profesional actual.</p>
-    <div class="list">
-      <a class="item" href="Caso Coca Cola.xlsx"><span>Caso Coca Cola</span><span>Excel</span></a>
-      <a class="item" href="Caso alquileres.xlsx"><span>Caso alquileres</span><span>Excel</span></a>
-      <a class="item" href="Modelo de Datos.xlsx"><span>Modelo de Datos</span><span>Excel</span></a>
-      <a class="item" href="Tipos de modelos.xlsx"><span>Tipos de modelos</span><span>Excel</span></a>
-      <a class="item" href="Representancion Total Clientes.pdf"><span>Representación Total Clientes</span><span>PDF</span></a>
-    </div>
+    <a class="back" href="../" aria-label="Volver al portfolio principal">← Volver al portfolio</a>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div><p class="eyebrow">Archivo académico</p><h1 id="titulo-principal">Datos, análisis y visualización.</h1></div>
+      <aside class="notice"><strong>Contexto</strong><p>Ejercicios desarrollados durante una etapa previa de formación. Se conservan como evidencia de aprendizaje y no representan el foco profesional actual del portfolio.</p></aside>
+    </section>
+    <section aria-labelledby="casos">
+      <div class="section-heading"><h2 id="casos">Casos de aprendizaje</h2><p>Una selección breve de entregables vinculados con análisis exploratorio, modelado y comunicación de datos.</p></div>
+      <div class="grid">
+        <article class="card"><span class="number">01</span><h3>Análisis exploratorio de datos comerciales</h3><p>Ejercicio de estadística descriptiva aplicado a un caso comercial, con análisis de correlación y priorización mediante diagrama de Pareto.</p><div class="chips"><span>Excel</span><span>Estadística descriptiva</span><span>Correlación</span><span>Pareto</span></div><div class="actions"><a class="button primary" href="Caso%20Coca%20Cola.xlsx" download>Descargar Excel</a></div></article>
+        <article class="card"><span class="number">02</span><h3>Variables y regresión de alquileres</h3><p>Ejercicio de regresión lineal múltiple para explorar la relación entre variables de departamentos en alquiler y sus valores de referencia.</p><div class="chips"><span>Excel</span><span>Regresión múltiple</span><span>Análisis de variables</span></div><div class="actions"><a class="button primary" href="Caso%20alquileres.xlsx" download>Descargar Excel</a></div></article>
+        <article class="card"><span class="number">03</span><h3>Estructura de datos de clientes</h3><p>Práctica de organización de información de clientes para trabajar atributos, relaciones y una base ordenada para el análisis posterior.</p><div class="chips"><span>Excel</span><span>Modelo de datos</span><span>Clientes</span></div><div class="actions"><a class="button primary" href="Modelo%20de%20Datos.xlsx" download>Descargar Excel</a></div></article>
+        <article class="card"><span class="number">04</span><h3>Visualización y comunicación de datos</h3><p>Selección de tipos de gráficos y representación de información para comunicar hallazgos de forma clara y adecuada al contexto.</p><div class="chips"><span>Excel</span><span>Gráficos</span><span>Visualización</span><span>Storytelling</span></div><div class="actions"><a class="button primary" href="Tipos%20de%20modelos.xlsx" download>Descargar Excel</a><a class="button" href="Representancion%20Total%20Clientes.pdf" target="_blank" rel="noopener">Abrir reporte PDF</a></div></article>
+      </div>
+    </section>
+    <p class="footnote">Los archivos se conservan en su formato original para mantener el contexto de las prácticas. Los datos y casos se presentan únicamente con fines académicos.</p>
   </main>
 </body>
 </html>
