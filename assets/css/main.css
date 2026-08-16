@@ -175,6 +175,7 @@ p { color: var(--muted); }
 
 .contact-section { padding-bottom: 90px; }
 .contact-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: start; padding: 2rem; border: 1px solid rgba(109,215,208,.18); border-radius: 28px; background: linear-gradient(135deg, rgba(120,169,255,.1), rgba(109,215,208,.06)); }
+.contact-grid h2 { font-size: clamp(2rem, 3.3vw, 3.05rem); }
 .contact-copy { max-width: 680px; margin-bottom: 0; }
 .contact-links { display: grid; gap: .7rem; }
 .contact-links a, .contact-email-reveal { display: block; width: 100%; padding: 1rem; border: 1px solid var(--line); border-radius: 14px; color: inherit; background: rgba(8,16,31,.35); text-align: left; text-decoration: none; transition: transform .2s ease, border-color .2s ease; }
