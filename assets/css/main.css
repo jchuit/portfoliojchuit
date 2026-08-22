@@ -172,6 +172,20 @@ p { color: var(--muted); }
 .education-date { color: var(--accent); font-size: .78rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 .education-list h3 { margin: .55rem 0 .4rem; font-size: 1.2rem; }
 .education-list p { margin: 0; }
+.credential-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: 1rem;
+  color: var(--accent);
+  font-size: .92rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: color .2s ease, transform .2s ease;
+}
+.credential-link:hover { color: var(--accent-strong); transform: translateX(3px); }
+.credential-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
 
 .contact-section { padding-bottom: 90px; }
 .contact-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: start; padding: 2rem; border: 1px solid rgba(109,215,208,.18); border-radius: 28px; background: linear-gradient(135deg, rgba(120,169,255,.1), rgba(109,215,208,.06)); }
