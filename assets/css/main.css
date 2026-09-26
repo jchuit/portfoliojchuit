@@ -124,7 +124,9 @@ p { color: var(--muted); }
 .hero-nucleus[data-state="proceso"] { background: #151b2d; }
 .hero-nucleus[data-state="entrega"] { background: #1d1930; }
 .hero-nucleus-grid { display: grid; grid-template-columns: minmax(0, .91fr) minmax(430px, 1.09fr); gap: clamp(3rem, 5vw, 5rem); align-items: center; min-height: calc(100vh - 74px); }
-.hero-nucleus .hero-copy h1 { max-width: 10ch; font-size: clamp(3.3rem, 5.5vw, 5.65rem); line-height: .87; letter-spacing: -.02em; word-spacing: .07em; }
+.hero-nucleus .hero-copy h1 { max-width: 10ch; font-size: clamp(3.3rem, 5.5vw, 5.65rem); line-height: .87; letter-spacing: -.015em; word-spacing: normal; }
+.hero-nucleus .hero-copy h1 > span, .hero-nucleus .hero-copy h1 > em { display: inline-block; margin-right: .11em; }
+.hero-nucleus .hero-copy h1 > em { margin-right: 0; }
 .hero-nucleus .hero-copy h1 em { color: #c8c1ff; font-weight: 500; }
 .hero-nucleus .hero-lead { max-width: 42ch; }
 .nucleus-stage { position: relative; min-height: 420px; }
