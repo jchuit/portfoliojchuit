@@ -59,6 +59,39 @@
     }));
   }
 
+  const nucleus = document.querySelector('.hero-nucleus');
+  if (nucleus) {
+    const layers = [...nucleus.querySelectorAll('[data-nucleus-layer]')];
+    const title = nucleus.querySelector('[data-nucleus-title]');
+    const text = nucleus.querySelector('[data-nucleus-text]');
+    const word = nucleus.querySelector('[data-nucleus-word]');
+    const copy = nucleus.querySelector('.nucleus-copy');
+    const states = {
+      contexto: { title: '01 · Contexto', text: 'Necesidad, reglas y alcance.', word: 'CONTEXTO' },
+      proceso: { title: '02 · Proceso', text: 'Dependencias, trazabilidad e integración.', word: 'PROCESO' },
+      entrega: { title: '03 · Entrega', text: 'Validación, UAT y operación.', word: 'ENTREGA' }
+    };
+    const selectNucleusLayer = (state) => {
+      const selected = states[state];
+      if (!selected) return;
+      nucleus.dataset.state = state;
+      title.textContent = selected.title;
+      text.textContent = selected.text;
+      word.textContent = selected.word;
+      copy.dataset.tone = state;
+      layers.forEach(layer => {
+        const active = layer.dataset.nucleusLayer === state;
+        layer.dataset.active = String(active);
+        layer.setAttribute('aria-pressed', String(active));
+      });
+    };
+    layers.forEach(layer => {
+      layer.addEventListener('pointerenter', () => selectNucleusLayer(layer.dataset.nucleusLayer));
+      layer.addEventListener('focus', () => selectNucleusLayer(layer.dataset.nucleusLayer));
+      layer.addEventListener('click', () => selectNucleusLayer(layer.dataset.nucleusLayer));
+    });
+  }
+
   const nodes = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) {
     nodes.forEach(node => node.classList.add('visible'));
