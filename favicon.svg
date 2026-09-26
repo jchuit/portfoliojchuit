@@ -2,5 +2,5 @@
   <circle cx="32" cy="32" r="30" fill="#111c31" stroke="#a9c0ff" stroke-width="2"/>
   <circle cx="32" cy="32" r="19" fill="none" stroke="#baaaff" stroke-opacity=".48"/>
   <circle cx="47" cy="17" r="4" fill="#deb8ff"/>
-  <text x="32" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="23" font-weight="400" letter-spacing="-2" fill="#dce5ff">JM</text>
+  <text x="32" y="40" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="23" font-weight="500" letter-spacing="-2" fill="#dce5ff">JM</text>
 </svg>
