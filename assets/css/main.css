@@ -370,7 +370,14 @@ p { color: var(--muted); }
   .hero-nucleus-grid { gap: 1rem; }
   .hero-nucleus .hero-copy h1 { font-size: clamp(2.7rem, 12vw, 3.75rem); max-width: 10ch; }
   .nucleus-stage { min-height: 320px; }
-  .nucleus-layers, .nucleus-aura { right: -10%; width: 75vw; }
+  .nucleus-layers, .nucleus-aura { left: 50%; right: auto; width: 75vw; }
+  .nucleus-layers { transform: translate(-50%, -50%); }
+  .nucleus-aura { transform: translate(-50%, -50%); }
+  .nucleus-layers:has(.outer[data-active="true"]) { transform: translate(-50%, -50%) scale(1.035); }
+  .nucleus-layers:has(.middle[data-active="true"]) { transform: translate(-50%, -50%) scale(.94); }
+  .nucleus-layers:has(.inner[data-active="true"]) { transform: translate(-50%, -50%) scale(.85); }
+  .hero-nucleus[data-state="proceso"] .nucleus-aura { transform: translate(-50%, -50%) scale(1.1); }
+  .hero-nucleus[data-state="entrega"] .nucleus-aura { transform: translate(-50%, -50%) scale(.93); }
   .nucleus-field-lines { inset: 0 -15% 0 0; }
   .nucleus-word { right: -8px; bottom: 8px; font-size: 5.3rem; }
   .nucleus-copy { width: 155px; font-size: .72rem; }

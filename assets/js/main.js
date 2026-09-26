@@ -23,7 +23,10 @@
   updateBackToTop();
   window.addEventListener('scroll', updateBackToTop, { passive: true });
   if (backToTop) {
-    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    backToTop.addEventListener('click', () => {
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+    });
   }
 
   const mailto = (subject = '', body = '') => {
@@ -57,6 +60,13 @@
       nav.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
     }));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
   }
 
   const nucleus = document.querySelector('.hero-nucleus');
