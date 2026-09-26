@@ -67,35 +67,36 @@
   </header>
 
   <main id="contenido">
-    <section class="hero section">
-      <div class="container hero-grid">
+    <section class="hero hero-nucleus section" data-state="contexto">
+      <div class="container hero-nucleus-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow">Analista Funcional Sr. · IT Business Analyst</p>
-          <h1>Negocio y sistemas, listos para avanzar.</h1>
+          <h1>Hacer que lo complejo tenga dirección.</h1>
           <p class="hero-lead">
-            Transformo necesidades complejas en procesos, requisitos e integraciones implementables, conectando negocio, desarrollo y operación.
+            Conecto necesidades de negocio con procesos, datos e integraciones implementables hasta su validación operativa.
           </p>
         </div>
 
-        <aside class="hero-map reveal" aria-label="Cómo trabajo">
-          <p class="hero-map-label">Cómo trabajo</p>
-          <ol class="work-steps">
-            <li>
-              <span class="work-step-number">01 · Entender</span>
-              <h2>Requerimientos</h2>
-              <p>Contexto, alcance, reglas de negocio e historias que ordenan la necesidad.</p>
-            </li>
-            <li>
-              <span class="work-step-number">02 · Ordenar</span>
-              <h2>Procesos y dependencias</h2>
-              <p>BPMN, trazabilidad y criterios de aceptación para reducir ambigüedad.</p>
-            </li>
-            <li>
-              <span class="work-step-number">03 · Validar</span>
-              <h2>Entrega operativa</h2>
-              <p>Integraciones, UAT, Jira y seguimiento hasta la puesta en producción.</p>
-            </li>
-          </ol>
+        <aside class="nucleus-stage reveal" aria-label="Capas del trabajo funcional">
+          <div class="nucleus-aura" aria-hidden="true"></div>
+          <div class="nucleus-field-lines" aria-hidden="true"></div>
+          <div class="nucleus-delivery-dot" aria-hidden="true"></div>
+          <div class="nucleus-layers">
+            <button class="nucleus-layer outer" type="button" data-nucleus-layer="contexto" data-active="true" aria-pressed="true" aria-label="Contexto: necesidad, reglas y alcance">
+              <span class="nucleus-node" aria-hidden="true"></span><span class="nucleus-index" aria-hidden="true">01</span>
+            </button>
+            <button class="nucleus-layer middle" type="button" data-nucleus-layer="proceso" data-active="false" aria-pressed="false" aria-label="Proceso: dependencias, trazabilidad e integración">
+              <span class="nucleus-node" aria-hidden="true"></span><span class="nucleus-index" aria-hidden="true">02</span>
+            </button>
+            <button class="nucleus-layer inner" type="button" data-nucleus-layer="entrega" data-active="false" aria-pressed="false" aria-label="Entrega: validación, UAT y operación">
+              <span class="nucleus-node" aria-hidden="true"></span><span class="nucleus-index" aria-hidden="true">03</span>
+            </button>
+            <p class="nucleus-copy" aria-live="polite">
+              <b data-nucleus-title>01 · Contexto</b>
+              <span data-nucleus-text>Necesidad, reglas y alcance.</span>
+            </p>
+          </div>
+          <div class="nucleus-word" aria-hidden="true" data-nucleus-word>CONTEXTO</div>
         </aside>
       </div>
     </section>
