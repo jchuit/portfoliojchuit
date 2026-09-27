@@ -118,20 +118,20 @@ p { color: var(--muted); }
 .hero-nucleus .hero-copy h1 em { color: #c8c1ff; font-weight: 500; }
 .hero-nucleus .hero-lead { max-width: 42ch; }
 .nucleus-stage { position: relative; min-height: 420px; }
-.nucleus-aura { position: absolute; right: 0; top: 50%; width: min(40vw, 455px); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(169,192,255,.2), transparent 65%); transform: translateY(-50%); transition: transform .5s ease, background .5s ease; }
+.nucleus-aura { position: absolute; right: 0; top: 50%; width: min(40vw, 455px); aspect-ratio: 1; overflow: hidden; border-radius: 50%; clip-path: circle(50%); background: radial-gradient(circle, rgba(169,192,255,.2), transparent 65%); transform: translateY(-50%); transition: transform .5s ease, background .5s ease; }
 .hero-nucleus[data-state="proceso"] .nucleus-aura { background: radial-gradient(circle, rgba(190,171,255,.22), transparent 65%); transform: translateY(-50%) scale(1.1); }
 .hero-nucleus[data-state="entrega"] .nucleus-aura { background: radial-gradient(circle, rgba(222,184,255,.24), transparent 65%); transform: translateY(-50%) scale(.93); }
 .nucleus-field-lines { position: absolute; right: 2%; top: 50%; width: min(40vw, 455px); aspect-ratio: 1; overflow: hidden; border-radius: 50%; opacity: 0; background-image: linear-gradient(rgba(242,244,250,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(242,244,250,.09) 1px, transparent 1px); background-size: 36px 36px; transform: translateY(-50%); transition: opacity .5s ease; pointer-events: none; }
 .hero-nucleus[data-state="proceso"] .nucleus-field-lines { opacity: .55; }
 .nucleus-layers { position: absolute; right: 2%; top: 50%; width: min(40vw, 455px); aspect-ratio: 1; transform: translateY(-50%); transition: transform .5s ease; }
-.nucleus-layer { position: absolute; display: grid; place-items: center; border: 1px solid rgba(242,244,250,.3); border-radius: 50%; background: transparent; color: #e9e8fb; cursor: pointer; transition: border-color .35s ease, background .4s ease, transform .48s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease, opacity .4s ease; }
+.nucleus-layer { position: absolute; display: grid; place-items: center; overflow: hidden; appearance: none; -webkit-appearance: none; border: 1px solid rgba(242,244,250,.3); border-radius: 50%; padding: 0; background: transparent; color: #e9e8fb; cursor: pointer; transition: border-color .35s ease, transform .48s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease, opacity .4s ease; }
 .nucleus-layer:hover, .nucleus-layer:focus-visible { border-color: currentColor; outline: 2px solid currentColor; outline-offset: 5px; }
 .nucleus-layer.outer { inset: 0; color: #a9c0ff; }
 .nucleus-layer.middle { inset: 17%; color: #baaaff; }
 .nucleus-layer.inner { inset: 35%; color: #deb8ff; }
 .nucleus-layer[data-active="false"] { opacity: .47; }
-.nucleus-layer[data-active="true"] { border-color: currentColor; background: rgba(255,255,255,.08); box-shadow: 0 0 0 14px rgba(255,255,255,.035), inset 0 0 72px rgba(255,255,255,.08); opacity: 1; }
-.nucleus-layer[data-active="true"] { background: color-mix(in srgb, currentColor 12%, transparent); box-shadow: 0 0 0 14px color-mix(in srgb, currentColor 5%, transparent), inset 0 0 72px color-mix(in srgb, currentColor 15%, transparent); }
+.nucleus-layer[data-active="true"] { border-color: currentColor; background: transparent; box-shadow: 0 0 0 5px rgba(242,244,250,.1), inset 0 0 72px rgba(242,244,250,.07); opacity: 1; }
+.nucleus-layer[data-active="true"] { box-shadow: 0 0 0 5px color-mix(in srgb, currentColor 9%, transparent), inset 0 0 72px color-mix(in srgb, currentColor 12%, transparent); }
 .nucleus-layer.outer[data-active="true"] { transform: scale(1.04); }
 .nucleus-layer.middle[data-active="true"] { transform: scale(1.09); }
 .nucleus-layer.inner[data-active="true"] { transform: scale(1.15); }
@@ -363,6 +363,7 @@ p { color: var(--muted); }
   .hero-nucleus[data-state="proceso"] .nucleus-aura { transform: translate(-50%, -50%) scale(1.1); }
   .hero-nucleus[data-state="entrega"] .nucleus-aura { transform: translate(-50%, -50%) scale(.93); }
   .nucleus-field-lines { transform: translate(-50%, -50%); }
+  .nucleus-hint { left: calc(50% - 37.5vw); top: calc(50% + 37.5vw + .75rem); bottom: auto; color: #9eacca; font-size: .74rem; letter-spacing: .01em; text-align: left; transform: none; }
   .nucleus-word { right: -8px; bottom: 8px; font-size: 5.3rem; }
   .nucleus-copy { width: 155px; font-size: .72rem; }
   .capability-list { grid-template-columns: 1fr; }
