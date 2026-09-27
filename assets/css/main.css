@@ -147,10 +147,6 @@ p { color: var(--muted); }
 .hero-nucleus[data-state="entrega"] .middle .nucleus-node { left: 34.1%; top: 39.5%; }
 .hero-nucleus[data-state="entrega"] .inner .nucleus-node { left: 39.2%; top: 5.3%; }
 .nucleus-layer[data-active="false"] .nucleus-node { opacity: .35; }
-.nucleus-index { position: absolute; color: currentColor; font-size: .62rem; font-weight: 800; letter-spacing: .12em; }
-.outer .nucleus-index { top: 8%; left: 18%; }
-.middle .nucleus-index { top: 9%; right: 15%; }
-.inner .nucleus-index { left: 50%; bottom: -22px; transform: translateX(-50%); }
 .nucleus-copy { position: absolute; z-index: 4; left: 50%; top: 50%; width: 188px; margin: 0; color: var(--text); font-size: .78rem; line-height: 1.45; text-align: center; transform: translate(-50%, -50%); transition: transform .45s ease; pointer-events: none; }
 .nucleus-copy b { display: block; margin-bottom: .45rem; color: #cbd8ff; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
 .nucleus-copy[data-tone="proceso"] b { color: #d6c9ff; }
@@ -382,7 +378,6 @@ p { color: var(--muted); }
   .hero-nucleus[data-state="entrega"] .nucleus-aura { transform: translate(-50%, -50%) scale(.93); }
   .nucleus-field-lines { transform: translate(-50%, -50%); }
   .nucleus-word { right: -8px; bottom: 8px; font-size: 5.3rem; }
-  .nucleus-index { display: none; }
   .nucleus-copy { width: 155px; font-size: .72rem; }
   .capability-list { grid-template-columns: 1fr; }
   .timeline-item { grid-template-columns: 1fr; gap: 1rem; padding: 2rem 0; }
