@@ -28,12 +28,8 @@
     .intro { display: grid; grid-template-columns: minmax(180px, .43fr) minmax(0, 1fr); gap: 2rem; padding: 32px 0 50px; }
     .intro h2 { margin: 0; font-size: 1.25rem; line-height: 1; }
     .intro p { max-width: 60ch; margin: 0; color: var(--muted); font-size: .95rem; }
-    .gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: clamp(1.5rem, 3vw, 3.5rem); row-gap: 74px; }
+    .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(3rem, 5vw, 4.8rem) clamp(1.5rem, 3vw, 3.5rem); }
     .case { min-width: 0; }
-    .case:nth-child(1), .case:nth-child(4) { grid-column: span 7; }
-    .case:nth-child(2), .case:nth-child(3) { grid-column: span 5; }
-    .case:nth-child(2) { padding-top: 64px; }
-    .case:nth-child(4) { padding-top: 26px; }
     .preview-link { display: block; overflow: hidden; border: 1px solid rgba(169, 192, 255, .22); background: #0b1425; aspect-ratio: 1256 / 776; box-shadow: 0 18px 42px rgba(2, 8, 23, .16); }
     .preview-link:hover { border-color: rgba(200, 193, 255, .62); }
     .preview-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
@@ -44,8 +40,8 @@
     .case p { max-width: 51ch; margin: 0; color: var(--muted); font-size: .91rem; }
     .case-meta { margin-top: .75rem; color: #8999bc; font-size: .66rem; letter-spacing: .1em; }
     .footnote { max-width: 62ch; margin: 88px 0 0; border-top: 1px solid var(--line); padding-top: 1.2rem; color: var(--muted); font-family: "Newsreader", Georgia, serif; font-size: 1.05rem; font-style: italic; }
-    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 1.6rem; padding: 70px 0 56px; } .hero-lead { max-width: 48ch; } .intro { grid-template-columns: 1fr; gap: .8rem; } .gallery { row-gap: 52px; } .case:nth-child(n) { grid-column: span 6; padding-top: 0; } }
-    @media (max-width: 600px) { .wrap { width: min(calc(100% - 32px), var(--wrap)); padding-top: 24px; padding-bottom: 62px; } .hero { padding: 58px 0 46px; } h1 { max-width: 11ch; font-size: clamp(2.8rem, 14vw, 4.05rem); } .hero-lead { border-left: 0; padding-left: 0; font-size: .98rem; } .intro { padding: 25px 0 38px; } .gallery { display: grid; grid-template-columns: 1fr; gap: 42px; } .case:nth-child(n) { grid-column: auto; } .case-copy { grid-template-columns: 2.45rem minmax(0, 1fr); gap: .72rem; padding-top: .9rem; } .case h3 { font-size: 1.75rem; } .case p { font-size: .88rem; } .footnote { margin-top: 62px; font-size: 1rem; } }
+    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 1.6rem; padding: 70px 0 56px; } .hero-lead { max-width: 48ch; } .intro { grid-template-columns: 1fr; gap: .8rem; } .gallery { gap: 52px 1.5rem; } }
+    @media (max-width: 600px) { .wrap { width: min(calc(100% - 32px), var(--wrap)); padding-top: 24px; padding-bottom: 62px; } .hero { padding: 58px 0 46px; } h1 { max-width: 11ch; font-size: clamp(2.8rem, 14vw, 4.05rem); } .hero-lead { border-left: 0; padding-left: 0; font-size: .98rem; } .intro { padding: 25px 0 38px; } .gallery { grid-template-columns: 1fr; gap: 42px; } .case-copy { grid-template-columns: 2.45rem minmax(0, 1fr); gap: .72rem; padding-top: .9rem; } .case h3 { font-size: 1.75rem; } .case p { font-size: .88rem; } .footnote { margin-top: 62px; font-size: 1rem; } }
   </style>
 </head>
 <body>
