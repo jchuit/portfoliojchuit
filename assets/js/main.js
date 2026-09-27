@@ -72,9 +72,11 @@
       proceso: { title: '02 · Proceso', text: 'Dependencias, trazabilidad e integración.', word: 'PROCESO' },
       entrega: { title: '03 · Entrega', text: 'Validación, UAT y operación.', word: 'ENTREGA' }
     };
+    const stateOrder = ['contexto', 'proceso', 'entrega'];
     const selectNucleusLayer = (state) => {
       const selected = states[state];
       if (!selected) return;
+      const nextState = stateOrder[stateOrder.indexOf(state) + 1];
       nucleus.dataset.state = state;
       if (layerFrame) layerFrame.dataset.activeState = state;
       title.textContent = selected.title;
@@ -84,6 +86,7 @@
       layers.forEach(layer => {
         const active = layer.dataset.nucleusLayer === state;
         layer.dataset.active = String(active);
+        layer.dataset.next = String(layer.dataset.nucleusLayer === nextState);
         layer.setAttribute('aria-pressed', String(active));
       });
     };
