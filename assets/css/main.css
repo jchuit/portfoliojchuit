@@ -124,7 +124,7 @@ p { color: var(--muted); }
 .nucleus-field-lines { position: absolute; right: 2%; top: 50%; width: min(40vw, 455px); aspect-ratio: 1; overflow: hidden; border-radius: 50%; opacity: 0; background-image: linear-gradient(rgba(242,244,250,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(242,244,250,.09) 1px, transparent 1px); background-size: 36px 36px; transform: translateY(-50%); transition: opacity .5s ease; pointer-events: none; }
 .hero-nucleus[data-state="proceso"] .nucleus-field-lines { opacity: .55; }
 .nucleus-layers { position: absolute; right: 2%; top: 50%; width: min(40vw, 455px); aspect-ratio: 1; transform: translateY(-50%); transition: transform .5s ease; }
-.nucleus-layer { position: absolute; display: grid; place-items: center; overflow: hidden; appearance: none; -webkit-appearance: none; border: 1px solid rgba(242,244,250,.3); border-radius: 50%; padding: 0; background: transparent !important; background-color: transparent !important; background-image: none !important; color: #e9e8fb; cursor: pointer; transition: border-color .35s ease, transform .48s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease, opacity .4s ease; }
+.nucleus-layer { position: absolute; display: grid; place-items: center; overflow: hidden; appearance: none; -webkit-appearance: none; -webkit-tap-highlight-color: transparent; touch-action: manipulation; border: 1px solid rgba(242,244,250,.3); border-radius: 50%; padding: 0; background: transparent !important; background-color: transparent !important; background-image: none !important; color: #e9e8fb; cursor: pointer; transition: border-color .35s ease, transform .48s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease, opacity .4s ease; }
 .nucleus-layer:hover, .nucleus-layer:focus-visible { border-color: currentColor; outline: 2px solid currentColor; outline-offset: 5px; }
 .nucleus-layer.outer { inset: 0; color: #a9c0ff; }
 .nucleus-layer.middle { inset: 17%; color: #baaaff; }
@@ -363,6 +363,21 @@ p { color: var(--muted); }
   .nucleus-layers[data-active-state="contexto"] { transform: translate(-50%, -50%) scale(1.035); }
   .nucleus-layers[data-active-state="proceso"] { transform: translate(-50%, -50%) scale(.94); }
   .nucleus-layers[data-active-state="entrega"] { transform: translate(-50%, -50%) scale(.85); }
+  /* Mobile browsers rasterize the nested transformed buttons as a square tap layer.
+     Keep the same selected/next-ring states without transforming either touch surface. */
+  .nucleus-layers,
+  .nucleus-layers:has(.outer[data-active="true"]),
+  .nucleus-layers:has(.middle[data-active="true"]),
+  .nucleus-layers:has(.inner[data-active="true"]),
+  .nucleus-layers[data-active-state="contexto"],
+  .nucleus-layers[data-active-state="proceso"],
+  .nucleus-layers[data-active-state="entrega"] { transform: translate(-50%, -50%); transition: none; }
+  .nucleus-layer,
+  .nucleus-layer.outer[data-active="true"],
+  .nucleus-layer.middle[data-active="true"],
+  .nucleus-layer.inner[data-active="true"] { transform: none; }
+  .nucleus-layer:focus,
+  .nucleus-layer:active { outline: none; }
   .hero-nucleus[data-state="proceso"] .nucleus-aura { transform: translate(-50%, -50%) scale(1.1); }
   .hero-nucleus[data-state="entrega"] .nucleus-aura { transform: translate(-50%, -50%) scale(.93); }
   .nucleus-field-lines { transform: translate(-50%, -50%); }
