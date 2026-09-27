@@ -6,7 +6,6 @@
   const year = document.getElementById('year');
   const backToTop = document.querySelector('.back-to-top');
   const emailReveal = document.querySelector('.contact-email-reveal');
-  const emailActions = document.querySelectorAll('.email-action');
   const portfolioEmail = () => atob('bWp1YW4yNjBAZ21haWwuY29t');
 
   if (year) year.textContent = new Date().getFullYear();
@@ -29,27 +28,17 @@
     });
   }
 
-  const mailto = (subject = '', body = '') => {
-    const params = new URLSearchParams();
-    if (subject) params.set('subject', subject);
-    if (body) params.set('body', body);
-    const query = params.toString();
-    window.location.href = `mailto:${portfolioEmail()}${query ? `?${query}` : ''}`;
-  };
-
   if (emailReveal) {
     emailReveal.addEventListener('click', () => {
       const link = document.createElement('a');
+      link.className = 'contact-email-reveal';
       link.href = `mailto:${portfolioEmail()}`;
+      link.setAttribute('aria-label', `Enviar email a ${portfolioEmail()}`);
       link.innerHTML = '<span>Email</span><strong></strong>';
       link.querySelector('strong').textContent = portfolioEmail();
       emailReveal.replaceWith(link);
     }, { once: true });
   }
-
-  emailActions.forEach(action => action.addEventListener('click', () => {
-    mailto(action.dataset.subject, action.dataset.body);
-  }));
 
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
@@ -76,6 +65,8 @@
     const text = nucleus.querySelector('[data-nucleus-text]');
     const word = nucleus.querySelector('[data-nucleus-word]');
     const copy = nucleus.querySelector('.nucleus-copy');
+    const layerFrame = nucleus.querySelector('.nucleus-layers');
+    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
     const states = {
       contexto: { title: '01 · Contexto', text: 'Necesidad, reglas y alcance.', word: 'CONTEXTO' },
       proceso: { title: '02 · Proceso', text: 'Dependencias, trazabilidad e integración.', word: 'PROCESO' },
@@ -85,6 +76,7 @@
       const selected = states[state];
       if (!selected) return;
       nucleus.dataset.state = state;
+      if (layerFrame) layerFrame.dataset.activeState = state;
       title.textContent = selected.title;
       text.textContent = selected.text;
       word.textContent = selected.word;
@@ -96,7 +88,7 @@
       });
     };
     layers.forEach(layer => {
-      layer.addEventListener('pointerenter', () => selectNucleusLayer(layer.dataset.nucleusLayer));
+      if (canHover) layer.addEventListener('pointerenter', () => selectNucleusLayer(layer.dataset.nucleusLayer));
       layer.addEventListener('focus', () => selectNucleusLayer(layer.dataset.nucleusLayer));
       layer.addEventListener('click', () => selectNucleusLayer(layer.dataset.nucleusLayer));
     });
