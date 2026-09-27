@@ -382,6 +382,7 @@ p { color: var(--muted); }
   .hero-nucleus[data-state="entrega"] .nucleus-aura { transform: translate(-50%, -50%) scale(.93); }
   .nucleus-field-lines { transform: translate(-50%, -50%); }
   .nucleus-word { right: -8px; bottom: 8px; font-size: 5.3rem; }
+  .nucleus-index { display: none; }
   .nucleus-copy { width: 155px; font-size: .72rem; }
   .capability-list { grid-template-columns: 1fr; }
   .timeline-item { grid-template-columns: 1fr; gap: 1rem; padding: 2rem 0; }
