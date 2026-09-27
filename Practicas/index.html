@@ -3,62 +3,66 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="canonical" href="https://juanchuit.com.ar/Practicas/" />
+  <meta name="theme-color" content="#0e1729" />
   <meta name="robots" content="noindex,follow" />
   <meta name="description" content="Archivo académico de Juan Manuel Chuit Berzoni: ejercicios históricos de análisis de datos, estadística, modelado y visualización." />
-  <meta name="theme-color" content="#08101f" />
+  <link rel="canonical" href="https://juanchuit.com.ar/Practicas/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
   <title>Archivo académico | Juan Manuel Chuit Berzoni</title>
   <style>
-    :root { color-scheme: dark; --bg: #08101f; --surface: #111d31; --text: #f4f7fb; --muted: #a7b4c8; --line: rgba(255, 255, 255, .13); --accent: #6dd7d0; --accent-soft: rgba(109, 215, 208, .12); }
+    :root { color-scheme: dark; --bg: #0e1729; --surface: #15213a; --text: #f2f4fa; --muted: #aebbd3; --line: rgba(218, 225, 242, .17); --accent: #a9c0ff; --accent-2: #c8c1ff; --wrap: 1320px; }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; background: radial-gradient(circle at 82% 10%, rgba(109, 215, 208, .09), transparent 28rem), var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif; line-height: 1.6; }
     a { color: inherit; }
-    .wrap { width: min(calc(100% - 72px), 1320px); margin: 0 auto; padding: 28px 0 72px; }
-    .back { display: inline-flex; align-items: center; gap: .55rem; color: var(--text); text-decoration: none; font-size: .95rem; font-weight: 750; }
-    .back:hover { color: var(--accent); }
-    .hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(280px, .75fr); gap: clamp(3rem, 6vw, 6rem); align-items: end; padding: 78px 0 56px; }
-    .eyebrow { margin: 0 0 1rem; color: var(--accent); font-size: .76rem; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
-    h1 { max-width: 18ch; margin: 0; font-size: clamp(2.35rem, 4.5vw, 4rem); line-height: 1.02; letter-spacing: -.04em; }
-    .hero-heading { max-width: 760px; }
-    .hero-lead { max-width: 42ch; margin: 0 0 .2rem; border-left: 1px solid var(--line); padding-left: 1.35rem; color: var(--muted); font-size: 1.02rem; }
-    .section-heading { margin-bottom: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
-    h2 { margin: 0; font-size: clamp(1.45rem, 2vw, 1.9rem); letter-spacing: -.025em; }
-    .section-heading p { max-width: 62ch; margin: .5rem 0 0; color: var(--muted); font-size: .96rem; }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-    .card { display: flex; min-height: 0; flex-direction: column; border: 1px solid var(--line); border-radius: 20px; padding: clamp(1.25rem, 2.4vw, 1.8rem); background: linear-gradient(145deg, rgba(17, 29, 49, .95), rgba(13, 23, 40, .86)); }
-    .preview { width: 100%; aspect-ratio: 1.6 / 1; margin: 0 0 1.2rem; border: 1px solid rgba(109, 215, 208, .2); border-radius: 12px; object-fit: cover; background: #0d1728; }
-    .number { display: inline-grid; width: 2.35rem; height: 2.35rem; place-items: center; margin-bottom: .9rem; border-radius: .65rem; background: var(--accent); color: #08202a; font-size: .78rem; font-weight: 900; }
-    .card h3 { max-width: 24ch; margin: 0 0 .65rem; font-size: clamp(1.2rem, 2vw, 1.5rem); line-height: 1.15; letter-spacing: -.025em; }
-    .card > p { margin: 0; color: var(--muted); font-size: .96rem; }
-    .chips { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.35rem 0 auto; }
-    .chips span { border: 1px solid var(--line); border-radius: 999px; padding: .28rem .62rem; background: var(--accent-soft); color: #d8f7f4; font-size: .78rem; line-height: 1.35; }
-    .actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.5rem; }
-    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; border: 1px solid var(--line); border-radius: 10px; padding: .58rem .85rem; color: var(--text); font-size: .88rem; font-weight: 750; text-decoration: none; }
-    .button:hover { border-color: var(--accent); color: var(--accent); }
-    .button.primary { border-color: var(--accent); background: var(--accent); color: #08202a; }
-    .button.primary:hover { background: #92e7e2; color: #08202a; }
-    .footnote { margin: 2.4rem 0 0; border-top: 1px solid var(--line); padding-top: 1.25rem; color: var(--muted); font-size: .88rem; }
-    @media (max-width: 760px) { .wrap { width: min(calc(100% - 32px), 1120px); padding-top: 22px; } .hero { display: block; padding: 58px 0 42px; } h1 { max-width: 14ch; } .hero-lead { max-width: 62ch; margin: 1.35rem 0 0; border-left: 0; padding-left: 0; font-size: .98rem; } .grid { grid-template-columns: 1fr; } .card { min-height: 0; } }
+    .wrap { width: min(calc(100% - 72px), var(--wrap)); margin: 0 auto; padding: 30px 0 84px; }
+    .back { display: inline-flex; align-items: center; gap: .55rem; color: var(--muted); text-decoration: none; font-size: .9rem; font-weight: 500; transition: color .2s ease; }
+    .back:hover, .back:focus-visible { color: var(--accent); }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .72fr); gap: clamp(3rem, 7vw, 8rem); align-items: end; padding: 92px 0 78px; border-bottom: 1px solid var(--line); }
+    .eyebrow, .case-index, .case-meta { margin: 0; color: var(--accent); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: "Newsreader", Georgia, serif; font-weight: 500; }
+    h1 { max-width: 12ch; margin: 0; font-size: clamp(3rem, 5.9vw, 5.65rem); line-height: .94; letter-spacing: -.055em; }
+    .hero-lead { max-width: 35ch; margin: 0; border-left: 1px solid var(--accent-2); padding-left: 1.3rem; color: var(--muted); font-size: 1.04rem; }
+    .intro { display: grid; grid-template-columns: minmax(180px, .43fr) minmax(0, 1fr); gap: 2rem; padding: 32px 0 50px; }
+    .intro h2 { margin: 0; font-size: 1.25rem; line-height: 1; }
+    .intro p { max-width: 60ch; margin: 0; color: var(--muted); font-size: .95rem; }
+    .gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: clamp(1.5rem, 3vw, 3.5rem); row-gap: 74px; }
+    .case { min-width: 0; }
+    .case:nth-child(1), .case:nth-child(4) { grid-column: span 7; }
+    .case:nth-child(2), .case:nth-child(3) { grid-column: span 5; }
+    .case:nth-child(2) { padding-top: 64px; }
+    .case:nth-child(4) { padding-top: 26px; }
+    .preview { display: block; width: 100%; border: 1px solid rgba(169, 192, 255, .22); background: var(--surface); aspect-ratio: 1256 / 776; object-fit: cover; box-shadow: 0 18px 42px rgba(2, 8, 23, .16); }
+    .case-copy { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 1rem; padding-top: 1.1rem; }
+    .case-index { padding-top: .35rem; color: var(--accent-2); }
+    .case h3 { max-width: 24ch; margin: 0 0 .35rem; font-size: clamp(1.45rem, 2.15vw, 2.2rem); line-height: .98; letter-spacing: -.038em; }
+    .case p { max-width: 51ch; margin: 0; color: var(--muted); font-size: .91rem; }
+    .case-meta { margin-top: .75rem; color: #8999bc; font-size: .66rem; letter-spacing: .1em; }
+    .footnote { max-width: 62ch; margin: 88px 0 0; border-top: 1px solid var(--line); padding-top: 1.2rem; color: var(--muted); font-family: "Newsreader", Georgia, serif; font-size: 1.05rem; font-style: italic; }
+    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 1.6rem; padding: 70px 0 56px; } .hero-lead { max-width: 48ch; } .intro { grid-template-columns: 1fr; gap: .8rem; } .gallery { row-gap: 52px; } .case:nth-child(n) { grid-column: span 6; padding-top: 0; } }
+    @media (max-width: 600px) { .wrap { width: min(calc(100% - 32px), var(--wrap)); padding-top: 24px; padding-bottom: 62px; } .hero { padding: 58px 0 46px; } h1 { max-width: 11ch; font-size: clamp(2.8rem, 14vw, 4.05rem); } .hero-lead { border-left: 0; padding-left: 0; font-size: .98rem; } .intro { padding: 25px 0 38px; } .gallery { display: grid; grid-template-columns: 1fr; gap: 42px; } .case:nth-child(n) { grid-column: auto; } .case-copy { grid-template-columns: 2.45rem minmax(0, 1fr); gap: .72rem; padding-top: .9rem; } .case h3 { font-size: 1.75rem; } .case p { font-size: .88rem; } .footnote { margin-top: 62px; font-size: 1rem; } }
   </style>
 </head>
 <body>
   <main class="wrap">
     <a class="back" href="../" aria-label="Volver al portfolio principal">← Volver al portfolio</a>
     <section class="hero" aria-labelledby="titulo-principal">
-      <div class="hero-heading"><p class="eyebrow">Archivo académico</p><h1 id="titulo-principal">Datos, análisis y visualización.</h1></div>
-      <p class="hero-lead">Ejercicios desarrollados durante una etapa previa de formación. Se conservan como evidencia de aprendizaje y no representan el foco profesional actual del portfolio.</p>
+      <div><p class="eyebrow">Archivo académico</p><h1 id="titulo-principal">Datos, análisis y visualización.</h1></div>
+      <p class="hero-lead">Ejercicios trabajados a partir de material de formación y adaptados en práctica. Se conservan como evidencia de aprendizaje, no como foco profesional actual.</p>
     </section>
-    <section aria-labelledby="casos">
-      <div class="section-heading"><h2 id="casos">Casos de aprendizaje</h2><p>Una selección de ejercicios de análisis exploratorio, modelado y comunicación de datos.</p></div>
-      <div class="grid">
-        <article class="card"><img class="preview" src="previews/pareto-incidencias.png" alt="Resumen visual del tiempo acumulado por tipo de incidencia" width="1256" height="776" loading="lazy" decoding="async" /><span class="number">01</span><h3>Análisis exploratorio de datos comerciales</h3><p>Ejercicio de estadística descriptiva aplicado a un caso comercial, con análisis de correlación y priorización mediante diagrama de Pareto.</p><div class="chips"><span>Excel</span><span>Estadística descriptiva</span><span>Correlación</span><span>Pareto</span></div><div class="actions"><a class="button primary" href="Caso%20Coca%20Cola.xlsx" download>Descargar Excel</a></div></article>
-        <article class="card"><img class="preview" src="previews/regresion-alquileres.png" alt="Resumen visual de una regresión múltiple de alquileres" width="1256" height="776" loading="lazy" decoding="async" /><span class="number">02</span><h3>Variables y regresión de alquileres</h3><p>Ejercicio de regresión lineal múltiple para explorar la relación entre variables de departamentos en alquiler y sus valores de referencia.</p><div class="chips"><span>Excel</span><span>Regresión múltiple</span><span>Análisis de variables</span></div><div class="actions"><a class="button primary" href="Caso%20alquileres.xlsx" download>Descargar Excel</a></div></article>
-        <article class="card"><img class="preview" src="previews/clientes-totales.png" alt="Clientes con mayor total acumulado" width="1256" height="776" loading="lazy" decoding="async" /><span class="number">03</span><h3>Estructura de datos de clientes</h3><p>Práctica de organización de información de clientes para trabajar atributos, relaciones y una base ordenada para el análisis posterior.</p><div class="chips"><span>Excel</span><span>Modelo de datos</span><span>Clientes</span></div><div class="actions"><a class="button primary" href="Modelo%20de%20Datos.xlsx" download>Descargar Excel</a></div></article>
-        <article class="card"><img class="preview" src="previews/produccion-mensual.png" alt="Gráfico de producción mensual por fruta" width="1256" height="776" loading="lazy" decoding="async" /><span class="number">04</span><h3>Visualización y comunicación de datos</h3><p>Selección de tipos de gráficos y representación de información para comunicar hallazgos de forma clara y adecuada al contexto.</p><div class="chips"><span>Excel</span><span>Gráficos</span><span>Visualización</span><span>Storytelling</span></div><div class="actions"><a class="button primary" href="Tipos%20de%20modelos.xlsx" download>Descargar Excel</a></div></article>
-      </div>
+    <section class="intro" aria-labelledby="casos">
+      <h2 id="casos">Casos de aprendizaje</h2>
+      <p>Una selección breve de análisis exploratorio, modelado y comunicación de datos. El formato pone el preview y el criterio de trabajo primero, sin competir con los casos profesionales del portfolio.</p>
     </section>
-    <p class="footnote">Los archivos fuente se mantienen en su formato original como respaldo de cada ejercicio. Los datos y casos se presentan únicamente con fines académicos.</p>
+    <section class="gallery" aria-label="Galería de ejercicios académicos">
+      <article class="case"><img class="preview" src="previews/pareto-incidencias.png" alt="Resumen visual del tiempo acumulado por tipo de incidencia" width="1256" height="776" loading="lazy" decoding="async" /><div class="case-copy"><span class="case-index">01</span><div><h3>Análisis exploratorio de datos comerciales</h3><p>Ejercicio de estadística descriptiva aplicado a un caso comercial, con análisis de correlación y priorización mediante diagrama de Pareto.</p><p class="case-meta">Excel · Estadística descriptiva · Pareto</p></div></div></article>
+      <article class="case"><img class="preview" src="previews/regresion-alquileres.png" alt="Resumen visual de una regresión múltiple de alquileres" width="1256" height="776" loading="lazy" decoding="async" /><div class="case-copy"><span class="case-index">02</span><div><h3>Variables y regresión de alquileres</h3><p>Ejercicio de regresión lineal múltiple para explorar la relación entre variables de departamentos en alquiler y sus valores de referencia.</p><p class="case-meta">Excel · Regresión múltiple</p></div></div></article>
+      <article class="case"><img class="preview" src="previews/clientes-totales.png" alt="Clientes con mayor total acumulado" width="1256" height="776" loading="lazy" decoding="async" /><div class="case-copy"><span class="case-index">03</span><div><h3>Estructura de datos de clientes</h3><p>Práctica de organización de información de clientes para trabajar atributos, relaciones y una base ordenada para el análisis posterior.</p><p class="case-meta">Excel · Modelo de datos</p></div></div></article>
+      <article class="case"><img class="preview" src="previews/produccion-mensual.png" alt="Gráfico de producción mensual por fruta" width="1256" height="776" loading="lazy" decoding="async" /><div class="case-copy"><span class="case-index">04</span><div><h3>Visualización y comunicación de datos</h3><p>Selección de tipos de gráficos y representación de información para comunicar hallazgos de forma clara y adecuada al contexto.</p><p class="case-meta">Excel · Visualización · Storytelling</p></div></div></article>
+    </section>
+    <p class="footnote">Archivos fuente disponibles a pedido.</p>
   </main>
 </body>
 </html>
