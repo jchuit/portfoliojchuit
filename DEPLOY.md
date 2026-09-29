@@ -2,18 +2,36 @@
 
 ## Estructura que debe quedar publicada
 
-En la raíz de la rama `main` deben quedar únicamente estos elementos:
+En la raíz de la rama `main` deben quedar estos elementos del sitio y su
+configuración de publicación:
 
 ```
 assets/
 Practicas/
+CNAME
 DEPLOY.md
 README.md
 favicon.svg
+googleecf5b6d0376e7c7c.html
 index.html
+robots.txt
+sitemap.xml
 ```
 
-No se deben conservar los CV viejos, los archivos sueltos de ejercicios académicos ni la carpeta `images/` del template anterior.
+No se deben conservar el CV, los archivos temporales, los ZIP de trabajo, la
+carpeta `images/` del template anterior ni CSS sueltos fuera de `assets/css/`.
+
+## Material académico
+
+La página `Practicas/` muestra únicamente previews de ejercicios históricos y
+no ofrece descargas directas. Sin embargo, los archivos fuente `.xlsx` y `.pdf`
+dentro de `Practicas/` siguen versionados y son accesibles desde un repositorio
+público.
+
+Antes de conservarlos, verificar que no contengan datos personales, de terceros
+o metadatos que no deban difundirse. Si el material debe quedar realmente
+"disponible a pedido", retirarlo del repositorio público y conservarlo por un
+canal privado.
 
 ## Opción recomendada: Git desde un clon local
 
