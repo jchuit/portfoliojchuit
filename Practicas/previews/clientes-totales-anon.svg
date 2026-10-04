@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1256" height="776" viewBox="0 0 1256 776" role="img" aria-labelledby="title desc">
+  <title id="title">Top 3 clientes por total acumulado</title>
+  <desc id="desc">Ranking anonimizado de tres clientes por total acumulado.</desc>
+  <rect width="1256" height="776" fill="#0e1729"/>
+  <text x="148" y="50" fill="#f2f4fa" font-family="DM Sans, Arial, sans-serif" font-size="45" font-weight="700">Top 3 clientes por total acumulado</text>
+  <rect x="148" y="85" width="1092" height="600" fill="#15213a"/>
+  <g stroke="#40506c" stroke-width="2" opacity=".72"><line x1="148" y1="171" x2="1240" y2="171"/><line x1="148" y1="384" x2="1240" y2="384"/><line x1="148" y1="597" x2="1240" y2="597"/></g>
+  <g fill="#b8c8f4" font-family="DM Sans, Arial, sans-serif" font-size="30"><text x="80" y="181">Cliente A</text><text x="80" y="394">Cliente B</text><text x="80" y="607">Cliente C</text></g>
+  <g fill="#a9c0ff"><rect x="148" y="112" width="873" height="119"/><rect x="148" y="325" width="798" height="119"/><rect x="148" y="538" width="729" height="119"/></g>
+  <g fill="#f2f4fa" font-family="DM Sans, Arial, sans-serif" font-size="31" font-weight="700"><text x="1045" y="181">29.325</text><text x="970" y="394">26.774</text><text x="901" y="607">24.440</text></g>
+  <g fill="#b8c8f4" font-family="DM Sans, Arial, sans-serif" font-size="28"><text x="136" y="720">0k</text><text x="282" y="720">5k</text><text x="430" y="720">10k</text><text x="580" y="720">15k</text><text x="730" y="720">20k</text><text x="880" y="720">25k</text><text x="1030" y="720">30k</text><text x="1172" y="720">35k</text><text x="668" y="754">Total acumulado</text></g>
+</svg>
