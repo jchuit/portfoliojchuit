@@ -1,0 +1,6 @@
+# Material académico fuente: conservar fuera del repositorio público.
+/Practicas/*.xlsx
+/Practicas/*.pdf
+
+# Archivos locales de empaquetado.
+*.zip

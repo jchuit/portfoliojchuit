@@ -23,15 +23,10 @@ carpeta `images/` del template anterior ni CSS sueltos fuera de `assets/css/`.
 
 ## Material académico
 
-La página `Practicas/` muestra únicamente previews de ejercicios históricos y
-no ofrece descargas directas. Sin embargo, los archivos fuente `.xlsx` y `.pdf`
-dentro de `Practicas/` siguen versionados y son accesibles desde un repositorio
-público.
-
-Antes de conservarlos, verificar que no contengan datos personales, de terceros
-o metadatos que no deban difundirse. Si el material debe quedar realmente
-"disponible a pedido", retirarlo del repositorio público y conservarlo por un
-canal privado.
+La página `Practicas/` muestra únicamente previews de ejercicios históricos.
+Los archivos fuente `.xlsx` y `.pdf` no deben quedar versionados en un
+repositorio público: conservarlos por un canal privado si hace falta compartirlos
+a pedido.
 
 ## Opción recomendada: Git desde un clon local
 
