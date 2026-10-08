@@ -25,7 +25,7 @@ Metodologías y marcos: `Scrum` `Kanban` `Waterfall` `ITIL` `BCRA` `PCI-DSS` `IS
 
 - **Artax Advisors · Cliente: Banco Piano** — Analista Funcional Sr. · IT Business Analyst (nov. 2025 - actualidad). Relevamiento y documentación para sistemas core y satélite bancarios; participación como referente funcional en una migración de tarjetas físicas a tarjetas digitales; gestión de backlog en Jira y validaciones funcionales sobre sistemas legacy.
 - **CFOTech IT Global Services · Banco Nación Argentina** — Analista Funcional - Ciberseguridad (ene. 2025 - mayo 2025). Seguimiento de hallazgos y coordinación de planes de remediación bajo lineamientos BCRA, ISO 27001 e ITIL.
-- **Applicant - IT Talent Management · Cliente: YPF** — Analista de Procesos de TI · Business Analyst (oct. 2023 - ene. 2025). Administración de CMDB en ServiceNow, modelado BPMN AS IS/TO BE y dashboards de KPIs en Power BI.
+- **Applicant - IT Talent Management · Cliente: YPF** — Analista de Procesos de TI · IT Business Analyst (oct. 2023 - ene. 2025). Administración de CMDB en ServiceNow, modelado BPMN AS IS/TO BE y dashboards de KPIs en Power BI.
 - **Global Processing** — Functional Support Analyst (sept. 2022 - oct. 2023). Coordinación de war rooms, análisis de fallas críticas en AWS CloudWatch y construcción de conocimiento interno.
 
 ## Proyectos académicos e históricos
