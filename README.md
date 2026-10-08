@@ -1,13 +1,12 @@
 # Juan Manuel Chuit Berzoni — Analista Funcional Sr. | IT Business Analyst | Procesos TI y Mejora Continua
 
-Analista Funcional Sr. con más de 5 años en TI, orientado a procesos TI, mejora continua, integraciones y sistemas críticos. Conecto necesidades de negocio con equipos técnicos para llevar requerimientos a soluciones implementables y trazables.
+Analista Funcional Sr. con más de 5 años de experiencia en TI, orientado a procesos TI, mejora continua, integraciones y sistemas críticos. Conecto necesidades de negocio con equipos técnicos para llevar requerimientos a soluciones implementables y trazables.
 
 [Ver portfolio online](https://juanchuit.com.ar/) · [Ver LinkedIn](https://www.linkedin.com/in/juan-manuel-chuit-berzoni/)
 
 ## Perfil
 
-- Más de 5 años de experiencia en IT.
-- Los últimos 3 años enfocados en análisis funcional en banca, fintech y oil & gas.
+- Más de 5 años de experiencia en TI.
 - Experiencia funcional en banca, fintech, oil & gas y ciberseguridad.
 - Relevamiento y documentación de requerimientos.
 - BPMN / UML y modelado AS IS / TO BE.
@@ -24,10 +23,10 @@ Metodologías y marcos: `Scrum` `Kanban` `Waterfall` `ITIL` `BCRA` `PCI-DSS` `IS
 
 ## Experiencia destacada
 
-- **Artax Advisors · Banco Piano** — Analista Funcional Sr. · IT Business Analyst (nov. 2025 - actualidad). Relevamiento y documentación para sistemas core y satélite bancarios; liderazgo funcional de una migración de tarjetas físicas a tarjetas digitales; gestión de backlog en Jira y validaciones funcionales sobre sistemas legacy.
+- **Artax Advisors · Cliente: Banco Piano** — Analista Funcional Sr. · IT Business Analyst (nov. 2025 - actualidad). Relevamiento y documentación para sistemas core y satélite bancarios; participación como referente funcional en una migración de tarjetas físicas a tarjetas digitales; gestión de backlog en Jira y validaciones funcionales sobre sistemas legacy.
 - **CFOTech IT Global Services · Banco Nación Argentina** — Analista Funcional - Ciberseguridad (ene. 2025 - mayo 2025). Seguimiento de hallazgos y coordinación de planes de remediación bajo lineamientos BCRA, ISO 27001 e ITIL.
-- **Applicant - IT Talent Management · YPF** — Analista de Procesos de TI · Business Analyst (oct. 2023 - ene. 2025). Administración de CMDB en ServiceNow, modelado BPMN AS IS/TO BE y dashboards de KPIs en Power BI.
-- **Global Processing** — Application Support Analyst (Funcional) (sept. 2022 - oct. 2023). Coordinación de war rooms, análisis de fallas críticas en AWS CloudWatch y construcción de conocimiento interno.
+- **Applicant - IT Talent Management · Cliente: YPF** — Analista de Procesos de TI · Business Analyst (oct. 2023 - ene. 2025). Administración de CMDB en ServiceNow, modelado BPMN AS IS/TO BE y dashboards de KPIs en Power BI.
+- **Global Processing** — Functional Support Analyst (sept. 2022 - oct. 2023). Coordinación de war rooms, análisis de fallas críticas en AWS CloudWatch y construcción de conocimiento interno.
 
 ## Proyectos académicos e históricos
 
