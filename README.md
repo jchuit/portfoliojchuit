@@ -1,6 +1,6 @@
-# Juan Manuel Chuit Berzoni — Analista Funcional Sr. | Business Analyst | Procesos TI y Mejora Continua
+# Juan Manuel Chuit Berzoni — Business Analyst Sr. | Medios de pago y productos transaccionales
 
-Analista Funcional Sr. con más de 5 años de experiencia en TI, orientado a procesos TI, mejora continua, integraciones y sistemas críticos. Conecto necesidades de negocio con equipos técnicos para llevar requerimientos a soluciones implementables y trazables.
+Business Analyst Sr. con más de 5 años de experiencia en TI, enfocado en medios de pago y productos transaccionales, con experiencia en procesos, integraciones y sistemas críticos. Conecto necesidades de negocio con equipos técnicos para llevar requerimientos a soluciones implementables y trazables.
 
 [Ver portfolio online](https://juanchuit.com.ar/) · [Ver LinkedIn](https://www.linkedin.com/in/juan-manuel-chuit-berzoni/)
 
