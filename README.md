@@ -23,11 +23,11 @@ Metodologías y marcos: `Scrum` `Kanban` `Waterfall` `ITIL` `BCRA` `PCI-DSS` `IS
 
 ## Experiencia destacada
 
-- **Qservices · Cliente: Payway** — Business Analyst Sr (oct. 2026 - actualidad). Relevamiento y definición de requerimientos para medios de pago y productos transaccionales; articulación entre Product Owners, negocio y desarrollo; historias de usuario, criterios de aceptación y trazabilidad del backlog; análisis de integraciones y modernización de plataformas legacy hacia cloud; acompañamiento de validaciones y puesta en producción.
-- **Artax Advisors · Cliente: Banco Piano** — Analista Funcional Sr. · Business Analyst (nov. 2025 - 23/10/2026). Relevamiento y documentación para sistemas core y satélite bancarios; participación como referente funcional en una migración de tarjetas físicas a tarjetas digitales; gestión de backlog en Jira y validaciones funcionales sobre sistemas legacy.
-- **CFOTech IT Global Services · Banco Nación Argentina** — Analista Funcional - Ciberseguridad (ene. 2025 - mayo 2025). Seguimiento de hallazgos y coordinación de planes de remediación bajo lineamientos BCRA, ISO 27001 e ITIL.
-- **Applicant - IT Talent Management · Cliente: YPF** — Analista de Procesos de TI · Business Analyst (oct. 2023 - ene. 2025). Administración de CMDB en ServiceNow, modelado BPMN AS IS/TO BE y dashboards de KPIs en Power BI.
-- **Global Processing** — Functional Support Analyst (sept. 2022 - oct. 2023). Coordinación de war rooms, análisis de fallas críticas en AWS CloudWatch y construcción de conocimiento interno.
+- **Qservices · Cliente: Payway** — Business Analyst Sr (oct. 2026 — Actualidad). Relevamiento y definición de requerimientos para medios de pago y productos transaccionales; articulación entre Product Owners, negocio y desarrollo; historias de usuario, criterios de aceptación y trazabilidad del backlog; análisis de integraciones y modernización de plataformas legacy hacia cloud; acompañamiento de validaciones y puesta en producción.
+- **Artax Advisors · Cliente: Banco Piano** — Analista Funcional Sr. · Business Analyst (nov. 2025 — oct. 2026). Relevamiento y documentación para sistemas core y satélite bancarios; participación como referente funcional en una migración de tarjetas físicas a tarjetas digitales; gestión de backlog en Jira y validaciones funcionales sobre sistemas legacy.
+- **CFOTech IT Global Services · Banco Nación Argentina** — Analista Funcional - Ciberseguridad (ene. 2025 — may. 2025). Seguimiento de hallazgos y coordinación de planes de remediación bajo lineamientos BCRA, ISO 27001 e ITIL.
+- **Applicant - IT Talent Management · Cliente: YPF** — Analista de Procesos de TI · Business Analyst (oct. 2023 — ene. 2025). Administración de CMDB en ServiceNow, modelado BPMN AS IS/TO BE y dashboards de KPIs en Power BI.
+- **Global Processing** — Functional Support Analyst (sept. 2022 — oct. 2023). Coordinación de war rooms, análisis de fallas críticas en AWS CloudWatch y construcción de conocimiento interno.
 
 ## Proyectos académicos e históricos
 
